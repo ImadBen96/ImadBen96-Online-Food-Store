@@ -35,7 +35,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../dist/frontend/browser/index.html'));
 });
 
-const port = 6000;
+const port = 5000;
 app.listen(port,() => {
     console.log("WebSite Served On http://localhost:"+port);
 });
