@@ -30,7 +30,7 @@ app.use("/api/orders", order_router_1.default);
 app.get('*', function (req, res) {
     res.sendFile(path_1.default.join(__dirname, '../dist/frontend/browser/index.html'));
 });
-var port = 6000;
+var port = 5000;
 app.listen(port, function () {
     console.log("WebSite Served On http://localhost:" + port);
 });
