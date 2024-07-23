@@ -22,7 +22,7 @@ app.use(express_1.default.static(path_1.default.join(__dirname, '../dist/fronten
 //app.use(express.static(path.resolve('../../frontend/dist/frontend/browser')));
 app.use((0, cors_1.default)({
     credentials: true,
-    origin: ["http://localhost:4200"]
+    origin: ["*"]
 }));
 app.use("/api/foods", food_router_1.default);
 app.use("/api/users", user_router_1.default);
