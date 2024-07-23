@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, '../dist/frontend/browser')));
 
 app.use(cors({
     credentials: true,
-    origin: ["http://localhost:4200"]
+    origin: ["*"]
 }));
 
 
