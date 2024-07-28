@@ -1,4 +1,4 @@
-const BASE_URL = "https://online-store-backend-g64nx6151-imad-gannouns-projects.vercel.app";
+const BASE_URL = "https://online-store-backend-41l57w12c-imad-gannouns-projects.vercel.app";
 
 export const FOODS_URL = BASE_URL + "/api/foods";
 export const FOODS_TAGS_URL = FOODS_URL + "/tags";
