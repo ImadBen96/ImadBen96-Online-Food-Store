@@ -5,8 +5,8 @@
 }
 
 #aboutUs img {
-  width: 100%;
-  margin: 20px;
+  width: 88%;
+  /*margin: 20px;*/
   border-radius: 10px;
 }
 
@@ -16,8 +16,7 @@
 
 .content h2 {
   font-size: 52px;
-  color: #ff4d4d;
-  font-family: cursive;
+  color: #cd9930;
   font-weight: bold;
 }
 
@@ -35,21 +34,19 @@
 
 .btn {
   font-weight: bold;
-  border: 2px solid #ff0000;
   cursor: pointer;
   padding: 10px 20px;
-  border-radius: 9px;
+  border-radius: 3rem;
   transition: all 0.4s;
-  background-color: #ff4d4d;
+  background: linear-gradient(227deg,rgba(205, 153, 48, 1) 0%, rgba(222, 185, 111, 1) 42%);
   width: 130px;
   color: white;
-  font-family: cursive;
 }
 
 .btn:hover {
-  border: 2px solid #ff0000;
+  border: 2px solid rgba(222, 185, 111, 1);
   background: transparent;
-  color: #ff4d4d;
+  color: rgba(222, 185, 111, 1);
 }
 
 @media screen and (max-width: 790px) {
@@ -91,6 +88,9 @@
   height: 65%;
   width: 108%;
   transform: skew(19deg, -9deg);
+}
+.hero-description p{
+  font-weight: 400;
 }
 
 .second .hero-description-bk {
@@ -162,6 +162,7 @@
 @media only screen and (max-width: 600px) {
   .sevices {
     display: block;
+    padding: 0.6rem;
   }
   .hero {
     min-width: 100%;
@@ -170,4 +171,18 @@
     height: 300px;
     margin-bottom: 10px;
   }
+}
+
+.section-partner {
+  margin: 4rem 0;
+}
+.section-partner-right p:nth-child(1) {
+  font-size: 20px;
+  color: gray;
+
+}
+.section-partner-right  h1{
+  color: #cd9930;
+  font-weight: 300;
+  margin-bottom: 3rem;
 }

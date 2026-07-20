@@ -9,13 +9,17 @@ import { TagsComponent } from '../../partials/tags/tags.component';
 import { NotFoundComponent } from '../../partials/not-found/not-found.component';
 import { Observable } from 'rxjs';
 import { HeroSectionComponent } from '../../partials/hero-section/hero-section.component';
+import {
+  WelcomeSectionComponentComponent
+} from "../../partials/welcome-section-component/welcome-section-component.component";
+import {ServiceComponentComponent} from "../../partials/service-component/service-component.component";
 
 
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterModule,StarRatingComponent,SearchComponent,HeroComponent,TagsComponent,NotFoundComponent,HeroSectionComponent],
+  imports: [RouterModule, StarRatingComponent, SearchComponent, HeroComponent, TagsComponent, NotFoundComponent, HeroSectionComponent, WelcomeSectionComponentComponent, ServiceComponentComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })

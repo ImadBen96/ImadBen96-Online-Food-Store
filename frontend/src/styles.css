@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&family=Noto+Kufi+Arabic:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Smooch+Sans:wght@100..900&display=swap');
 *,
 *:after,
 *:before {
@@ -11,8 +10,13 @@
 	--header-bg: #fff;
 }
 body {
-	font-family: "DM Sans", sans-serif;
-	background-color: #f2f5f7;
+  font-family: "Cairo", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+  font-weight: 200;
+  background-color: #f2f5f7;
 	line-height: 1.5;
 	/*min-height: 300vh;*/
 	position: relative;
@@ -44,7 +48,6 @@ a{
   text-align: center;
 }
 .title-item h1{
-  font-family: cursive;
   margin: 5px;
 }
 .title-item span{

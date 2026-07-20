@@ -1,0 +1,166 @@
+/* ── Two-column grid ── */
+.banners-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 16px;
+}
+
+/* ════════════════════════
+   LEFT BANNER
+════════════════════════ */
+.banner-left {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 380px;
+  /* Replace with your real background image: */
+  background: linear-gradient(160deg, #c0392b 0%, #8b1a1a 50%, #5a0a0a 100%);
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Real bg image: */
+/* .banner-left { background-image: url('food-bg.jpg'); background-size: cover; background-position: center; } */
+
+.left-content {
+  position: relative;
+  z-index: 2;
+  background: #f5e642;          /* yellow card */
+  border-radius: 16px;
+  padding: 18px 20px 20px;
+  margin: 0 16px 16px;
+  width: 100%;
+}
+
+/* ════════════════════════
+   RIGHT BANNER
+════════════════════════ */
+.banner-right {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  min-height: 380px;
+  /* Replace with your real background image: */
+  background: linear-gradient(135deg, #b8e8b0 0%, #d0f0c8 30%, #88ccdd 70%, #66aacc 100%);
+  display: flex;
+  align-items: center;
+  padding: 40px 48px;
+}
+
+/* Real bg image: */
+/* .banner-right { background-image: url('corn-bg.jpg'); background-size: cover; } */
+
+.right-content {
+  position: relative;
+  z-index: 2;
+  max-width: 380px;
+}
+
+/* Product image (right side) */
+.right-img {
+  position: absolute;
+  right: 0; top: 0; bottom: 0;
+  width: 42%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.right-img img {
+  height: 100%;
+  object-fit: contain;
+}
+
+/* ════════════════════════
+   SHARED ELEMENTS
+════════════════════════ */
+
+/* Badges */
+.badge-green {
+  display: inline-block;
+  background: #aee9d1;
+  color: #1a5a4a;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.badge-yellow {
+  display: inline-block;
+  background: #f5e642;
+  color: #333;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-bottom: 16px;
+}
+
+/* Titles */
+.left-content h2 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.right-content h1 {
+  font-size: 34px;
+  font-weight: 800;
+  color: #111;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+
+/* Paragraphs */
+.left-content p,
+.right-content p {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.65;
+  margin-bottom: 16px;
+}
+
+/* ── Shop Now button ── */
+.btn-shop {
+  display: inline-flex;
+  align-items: center;
+  background: #1a7a6a;
+  border-radius: 999px;
+  padding: 6px 6px 6px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.btn-shop:hover { background: #155f53; }
+
+.btn-shop .lbl {
+  font-size: 13px;
+  font-weight: 600;
+  color: #fff;
+  margin-right: 12px;
+  white-space: nowrap;
+}
+
+.btn-shop .arrow {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .banners-row { grid-template-columns: 1fr;        padding: 0.4rem; }
+  .right-content h1 { font-size: 24px; }
+  .right-img { display: none; }
+
+}

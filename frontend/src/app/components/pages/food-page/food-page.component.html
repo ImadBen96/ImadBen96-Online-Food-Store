@@ -21,6 +21,7 @@
         <span class="favorite {{food.favorite?'':'not'}}">❤</span>
     </div>
     <div class="rating">
+      <span class="left-text">Rating :</span>
       <app-star-rating [stars]="food.stars" [size]="1.8" />
     </div>
     <div class="origins">
@@ -29,6 +30,7 @@
       }
     </div>
     <div class="tags">
+      <span class="left-text">Tags :</span>
       @for (tag of food.tags; track $index) {
         <a  routerLink="/tag/{{tag}}">
           {{tag}}
@@ -37,15 +39,14 @@
     </div>
     <div class="cook-time">
       <span>
-        Time to cook about <strong>{{food.cookTime}}</strong> minutes
+        Time to cook about <strong style="color: red;">{{food.cookTime}}</strong> minutes
       </span>
+      <p>Vivamus adipiscing nisl ut dolor dignissim semper. Nulla luctus malesuada tincidunt. Class aptent taciti sociosqu ad litora torquent</p>
     </div>
     <div class="price">
-      <span>
-        ${{food.price}}
-      </span>
+      <span>${{food.price}}</span>
     </div>
-    <button (click)="addToCart()">Add To Cart</button>
+    <button class="btn-add_to_cart" (click)="addToCart()">Add To Cart</button>
   </div>
 
 </div>

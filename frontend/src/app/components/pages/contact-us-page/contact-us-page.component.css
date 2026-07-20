@@ -1,7 +1,7 @@
 .contact-us{
-  margin: 4rem auto 0 auto;
   width: 88%;
   text-align: center;
+  margin: 6rem auto;
 }
 .container {
   background-color: #ffffff;
@@ -23,9 +23,28 @@ h2 {
 .form-container {
   display: flex;
 }
-
+.left-side-section-contact_us img {
+  width: 85% ;
+}
 .left-container {
   flex: 1;
+}
+
+.single-icon {
+  background: antiquewhite;
+  padding: 2rem;
+  border-radius: 3rem 0;
+}
+.get_touch {
+  margin-bottom: 3rem;
+}
+.bottom-contact_us {
+  margin-bottom: 4rem;
+  justify-content: space-between;
+}
+.contact-us-icon img {
+  width: 17%;
+  margin-bottom: 2rem;
 }
 
 .right-container {
@@ -72,18 +91,15 @@ input:focus, textarea:focus {
 }
 
 button {
-  border-radius: 9px;
-  border: 1px solid red;
-  background-color: #ff4d4d;
-  color: #FFFFFF;
-  font-size: 12px;
   font-weight: bold;
-  padding: 12px 45px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: transform 80ms ease-in;
   cursor: pointer;
-  font-family: cursive;
+  padding: 10px 20px;
+  border-radius: 3rem;
+  transition: all 0.4s;
+  background: linear-gradient(227deg, rgba(205, 153, 48, 1) 0%, rgba(222, 185, 111, 1) 42%);
+  width: 130px;
+  color: white;
+  border: none;
 }
 
 button:hover {
@@ -102,7 +118,7 @@ button:hover {
     min-width: 100%;
   }
   .contact-us {
-    width: 100%;
+    width: 95%;
   }
   button{
     margin-bottom: 10px;
@@ -115,4 +131,16 @@ button:hover {
 }
 form p {
   text-align: left;
+}
+@media only screen and (max-width: 600px) {
+  .single-icon {
+    width: 90%;
+    margin: 0 auto 4rem auto;
+  }
+  .right-inner-container {
+    width: 100%;
+  }
+  .right-inner-container h2.sm-view {
+    margin-top: 2rem;
+  }
 }

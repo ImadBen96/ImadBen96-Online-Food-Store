@@ -18,7 +18,25 @@ li a{
   overflow: hidden;
   color: #e72929;
 }
+.our-feature {
+  position: relative;
+}
+.our-feature img {
+  border-radius: 3rem 0;
+}
+@media screen and (max-width: 499px) {
+  .our-feature {
+    margin-bottom: 2rem;
+  }
 
+}
+
+.our-feature .single-feature{
+  position: absolute;
+  top: 32%;
+  width: 65%;
+  padding: 0 2rem;
+}
 li a:hover{
   opacity: 0.9;
   cursor: pointer;

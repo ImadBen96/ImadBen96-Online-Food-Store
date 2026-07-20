@@ -1,5 +1,4 @@
 h3 {
-  font-family: "Noto Serif Display", serif;
   font-size: 2.3rem;
   font-weight: 300;
   text-align: center;
@@ -15,6 +14,16 @@ a {
 }
 a:hover {
   border-bottom: 1px solid var(--dark);
+}
+.layout_item {
+  width: 50%;
+}
+@media screen and (max-width: 499px) {
+  .layout_item {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
 }
 ul {
   list-style-type: none;

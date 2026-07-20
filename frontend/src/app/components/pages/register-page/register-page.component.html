@@ -1,6 +1,10 @@
 <app-title title="Register Page"></app-title>
 <div class="login-page">
+
   <div class="form">
+    <div class="form-register-logo">
+      <img src="../../../../assets/logo-login.png" alt="" />
+    </div>
     <form  [formGroup]="registerForm" (ngSubmit)="submit()" class="login-form">
       <div>
         <input type="text" placeholder="Name" formControlName="name" />

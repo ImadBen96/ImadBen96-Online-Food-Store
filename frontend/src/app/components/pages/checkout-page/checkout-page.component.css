@@ -1,7 +1,7 @@
 .container{
   margin-top: 1rem;
   display: flex;
-  margin: 2rem 2rem 6rem 2rem;
+  /*margin: 2rem 2rem 6rem 2rem;*/
   flex-wrap: wrap;
   padding: 2rem;
   align-items: baseline;
@@ -10,7 +10,7 @@
 }
 
 .content{
-  width: 35rem;
+  width: 50rem;
   margin-right: 3rem;
 }
 
@@ -59,4 +59,13 @@ button{
 button:hover{
   opacity: 1;
   cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .container {
+    margin: auto;
+  }
+  .content {
+    width: 100%;
+    margin: auto;
+  }
 }

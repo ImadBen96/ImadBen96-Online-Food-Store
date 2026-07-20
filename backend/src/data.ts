@@ -1,6 +1,3 @@
-
-
-
 export const sample_foods: any[] = [
   {
     id:'1',
