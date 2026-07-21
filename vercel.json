@@ -16,9 +16,9 @@
         "dest": "/backend/built/server.js"
       },
       {
-        "src": "/(.*)",
-        "dest": "/backend/dist/frontend/browser/$1"
-      }
+            "src": "/(.*)",
+            "dest": "/built/server.js"
+          }
     ]
   }
   
