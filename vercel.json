@@ -17,7 +17,7 @@
       },
       {
             "src": "/(.*)",
-            "dest": "/built/server.js"
+            "dest": "/backend/built/server.js"
           }
     ]
   }
