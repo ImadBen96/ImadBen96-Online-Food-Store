@@ -22,11 +22,11 @@ app.use(express.json());
 //app.use(express.static(path.resolve('../../frontend/dist/frontend/browser')));
 
 // Serve static files from the Angular app
-app.use(express.static(path.join(__dirname, '../../frontend/dist/frontend/browser')));
+app.use(express.static(path.join(__dirname, '../dist/frontend/browser')));
 
 app.use(cors({
     credentials: true,
-    origin: ["http://localhost:4200"]
+    origin: ["https://imad-ben96-online-food-store.vercel.app"]
 }));
 
 
@@ -34,7 +34,7 @@ app.use("/api/foods",foodRouter);
 app.use("/api/users",userRouter);
 app.use("/api/orders",orderRouter);
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, '../../frontend/dist/frontend/browser/index.html'));
+    res.sendFile(path.join(__dirname, '../dist/frontend/browser/index.html'));
 });
 
 const port = 5000;

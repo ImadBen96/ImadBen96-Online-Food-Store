@@ -11,11 +11,10 @@
       }
     ],
     "routes": [
-      {
-        "src": "/backend/built/server.js(.*)",
-        "dest": "/backend/built/server.js"
-      },
-      {
+        {
+            "handle": "filesystem"
+          },
+          {
             "src": "/(.*)",
             "dest": "/backend/built/server.js"
           }
